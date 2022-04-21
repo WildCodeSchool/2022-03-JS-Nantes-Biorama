@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
   width: 100%;
   min-height: 75px;
   padding: 1rem;
@@ -50,7 +49,6 @@
     padding: 2rem;
     background-color: var(--main-color);
     transition: all 0.8s ease-out;
-   
   }
 
   .showNav .navbarLinks {
@@ -80,9 +78,7 @@
 
   .navbarBurger {
     display: block;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
+    padding-bottom: 1.5rem;
   }
 
   .navbarBurger:hover {
@@ -116,15 +112,15 @@
     transform: translateY(12px);
   }
 
-  .showNav .burger-bar::before {
+  .showNav .burgerBar::before {
     transform: rotate(45deg);
   }
 
-  .showNav .burger-bar::after {
+  .showNav .burgerBar::after {
     transform: rotate(-45deg);
   }
 
-  .showNav .burger-bar {
+  .showNav .burgerBar {
     background: transparent;
     width: 0;
   }

@@ -6,14 +6,14 @@ import Contact from "./pages/Contact";
 
 function Content() {
   return (
-    <div>
+    <main>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Search" element={<Search />} />
         <Route path="/Info" element={<Info />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
-    </div>
+    </main>
   );
 }
 
